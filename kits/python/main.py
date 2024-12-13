@@ -27,6 +27,7 @@ def agent_fn(observation, configurations):
     agent = agent_dict[player]
     actions = agent.act(step, from_json(obs), remainingOverageTime)
     return dict(action=actions.tolist())
+
 if __name__ == "__main__":
     
     def read_input():
